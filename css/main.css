@@ -1,13 +1,88 @@
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+header{
+    background-color: #fafafa;
+    min-height: 140px;
+}
+
+header .container .row .box-horario{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-radius-bottomleft: 40px;
+    border-bottom-left-radius: 40px;    
+    font-size: 17px;
+}
+
+header .container .row .box-hablamos{
+    text-align: center;
+    background-color: #ffff41;
+    color: #040404;
+    height: 64px;
+    line-height: 64px; 
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-bottom-left-radius: 20px;    
+    font-size: 24px;       
+}
+
+header .container .row .dir{
+    text-align: center;
+    color: #16263f;
+    font-size: 16px;       
+}
+header .container .row .tel{
+    text-align: center;
+    color: #000;
+    font-size: 18px;       
+}
+
+.navbar-inverse {
+    background-color: #000;
+    border-color: #000;
+    background-image: none;
+    border-radius: 0px;
+}
 
 
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-shadow: none;
+}
 
+#navbar > a.active {
+    color: #ffff41;
+}
 
+.navbar-brand {
+    float: left;
+    height: 43px;
+    padding: 13px 45px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navbar-brand:first-child{
+    padding-left:0px;
+}
+.navbar-logo {
+    float: left;
+    height: 43px;
+    padding: 17px 0px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.navbar-header .navbar-logo img{
+    width: 60%;
+    margin-top: -145px;
+}
 
 
 
