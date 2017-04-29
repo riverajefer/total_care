@@ -56,7 +56,15 @@ header .container .row .tel{
     text-shadow: none;
 }
 
+.navbar{
+    margin-bottom: 0px;
+}
+
 #navbar > a.active {
+    color: #ffff41;
+}
+
+#navbar > a:hover {
     color: #ffff41;
 }
 
@@ -75,22 +83,94 @@ header .container .row .tel{
     float: left;
     height: 43px;
     padding: 17px 0px;
-    font-size: 16px;
-    line-height: 20px;
+}
+
+.navbar-header {
+    float: left;
+    margin-right: -97px !important;
 }
 
 .navbar-header .navbar-logo img{
-    width: 60%;
-    margin-top: -145px;
+    position: relative;
+    z-index: 99;
+    width: 50%;
+    margin-top: -115px;
+}
+.carousel{
+}
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption{
+
+}
+
+.carousel-caption {
+    text-align: left;
+    right: 20%;
+    left: 20%;
+    top: 50%;
+    padding-bottom: 30px;
+}
+
+.carousel-caption h3{
+    font-size: 40px;
+}
+
+.carousel-caption p{
+    width: 15%;
+    min-height: 20px;
+    border-bottom: 7px solid #ffff41;
+}
+
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #ffff41;
+}
+
+
+.carousel-inner{
+    height: 550px;
+}
+
+.banners{
+    margin: 30px 0px;
+}
+
+.banners .bn-hours {
+    background-image: url("../img/banner_hours.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.banners .bn-location {
+    background-image: url("../img/banner_location.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+.banners .bn-contact {
+    background-image: url("../img/banner_contact.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100%; 
 }
 
 
 
 
 
-
-
-
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media(min-width:576px){}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
 
 
 
