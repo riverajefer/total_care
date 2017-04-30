@@ -1,7 +1,55 @@
 
+
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+
+/* ==========================================================================
+   VARIOS
+========================================================================= */
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-total {
+    display: inline-block;
+    padding: 7px 30px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 2px solid #ffff41;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #000;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;    
+}
+
+.btn-total:hover {
+    background-color: #ffff41;
+    color: #000;
+}
+
+
+/* ==========================================================================
+   HEADER
+========================================================================= */
 
 header{
     background-color: #fafafa;
@@ -9,11 +57,12 @@ header{
 }
 
 header .container .row .box-horario{
+    font-family: 'Lato', sans-serif;
     text-align: center;
     background-color: #000;
     color: #fff;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
     -webkit-border-bottom-left-radius: 40px;
     -moz-border-radius-bottomleft: 40px;
     border-bottom-left-radius: 40px;    
@@ -21,27 +70,38 @@ header .container .row .box-horario{
 }
 
 header .container .row .box-hablamos{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
     text-align: center;
     background-color: #ffff41;
     color: #040404;
-    height: 64px;
-    line-height: 64px; 
+    height: 50px;
+    line-height: 50px; 
     -webkit-border-bottom-left-radius: 20px;
     -moz-border-radius-bottomleft: 20px;
     border-bottom-left-radius: 20px;    
-    font-size: 24px;       
+    font-size: 22px;  
+    font-style: italic;     
 }
 
 header .container .row .dir{
     text-align: center;
     color: #16263f;
-    font-size: 16px;       
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 header .container .row .tel{
     text-align: center;
     color: #000;
-    font-size: 18px;       
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
 }
+
+/* ==========================================================================
+   MENÚ
+========================================================================= */
 
 .navbar-inverse {
     background-color: #000;
@@ -49,7 +109,6 @@ header .container .row .tel{
     background-image: none;
     border-radius: 0px;
 }
-
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
     color: #fff;
@@ -74,6 +133,8 @@ header .container .row .tel{
     padding: 13px 45px;
     font-size: 16px;
     line-height: 20px;
+    font-family: 'Lato', sans-serif;    
+    font-weight: bold;
 }
 
 .navbar-brand:first-child{
@@ -96,17 +157,15 @@ header .container .row .tel{
     width: 50%;
     margin-top: -115px;
 }
-.carousel{
-}
+
+/* ==========================================================================
+   CAROUSEL
+========================================================================= */
 
 .full-screen {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.carousel-caption{
-
 }
 
 .carousel-caption {
@@ -119,6 +178,8 @@ header .container .row .tel{
 
 .carousel-caption h3{
     font-size: 40px;
+    font-family: 'Lato', sans-serif;    
+    font-weight: bold;    
 }
 
 .carousel-caption p{
@@ -134,33 +195,504 @@ header .container .row .tel{
     background-color: #ffff41;
 }
 
-
 .carousel-inner{
     height: 550px;
 }
 
+/* ==========================================================================
+   BANNERS
+========================================================================= */
+
 .banners{
-    margin: 30px 0px;
+    margin: 15px 0px;
 }
 
-.banners .bn-hours {
+.bn-hours {
     background-image: url("../img/banner_hours.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-.banners .bn-location {
+.bn-location {
     background-image: url("../img/banner_location.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%; 
 }
 
-.banners .bn-contact {
+.bn-contact {
     background-image: url("../img/banner_contact.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%; 
 }
 
+.banners > div {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.banners > div > div{
+    padding: 10px;
+    color: #fffffe;
+    min-height: 283px;
+}
+
+.banners > div > div{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.banners > div > div > div h2{
+    border: 2px solid #ffff41;
+    border-radius: 10px; 
+    font-size: 24px;   
+    padding: 5px;
+    width: 60%;
+    margin: 10px auto;
+    margin: 10px 0px 10px 87px;
+    font-family: 'Lato', sans-serif;    
+    font-weight: bold;    
+}
+
+.banners > div > div > div i{
+    float: left;
+    color: #ffff41;
+    font-size: 37px;
+    margin-top: 2px;
+    margin-left: 35px;
+}
+
+.bn-hours ul{
+    text-align: left;
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.bn-hours ul li{
+    line-height: 1.5em;
+    font-size: 14px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.bn-location div > img{
+    width: 274px;
+    margin-top: 5px;
+}
+.bn-contact > div {
+    padding: 0px 5px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;    
+}
+
+.bn-contact > div h3{
+    font-size: 17px;
+    line-height: 1.4em;
+}
+.bn-contact > div > p.borde{
+    margin: 10px auto;
+    width: 70%;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+.bn-contact > div > p.number{
+    font-size: 28px;
+}
+.bn-contact > div > p.email{
+    font-size: 17px;
+}
+
+/* ==========================================================================
+   SERVICES
+========================================================================= */
+
+.services{
+    text-align: center;
+    background-image: url("../img/banner_services.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 375px;
+    color: #fff;
+    padding: 20px;
+}
+
+.services h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;    
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.services h3 span{
+    color: #ffff41;
+}
+
+.services .container .row .col-md-4 ul{
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;    
+    font-weight: bold;
+    text-align: left;
+}
+
+.services .container .row .col-md-4 ul li{
+    line-height: 2.3em;
+    font-size: 15px;
+}
+.services .container .row .col-md-4 ul li i{
+    color: #ffff41;
+    padding-right: 10px;
+}
+
+.div-btn{
+    margin: 40px auto;
+}
+.div-btn a:focus{
+    color: #fff;
+}
+.div-btn a{
+    text-decoration: none;
+}
+
+/* ==========================================================================
+   TESTIMONIAL
+========================================================================= */
+
+.testimonial-container{
+    background-image: url("../img/testimonial.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align:center;
+    min-height: 291px;
+}
+.title-testimonial{
+    font-family: 'Lato', sans-serif;    
+    font-weight: 700;
+    font-size: 28px;
+    color: #020202;
+    margin: 30px 0px;
+}
+
+.testimonial{
+    text-align: center;
+}
+.testimonial .pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.testimonial .testimonial-title{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    color: #020202;
+    margin: 0 0 55px 0;
+    font-family: 'Arimo', sans-serif;
+    font-style: italic;
+    font-weight: bold;    
+}
+.testimonial .testimonial-title small{
+    font-size: 15px;
+    font-weight: 600;
+    color: #787878;
+}
+.testimonial .description{
+    font-size: 18px;
+    color: #020202;
+    line-height: 23px;
+    position: relative;
+    margin: 0 auto;
+    width: 60%;
+    font-family: 'Arimo', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.testimonial .description:before{
+    content: "\f10d";
+    font-family: fontawesome;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 46%;
+    font-size: 20px;
+    color: #fa7921;
+    line-height:33px;
+    border: 2px solid #fa7921;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #000 !important;
+    border: 2px solid #ffff41 !important;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span{
+    border: 2px solid #fa7921;
+}
+
+.owl-theme .owl-controls {
+    margin-top: -28px !important;
+    text-align: center;
+}
+
+/* ==========================================================================
+   FOOTER
+========================================================================= */
+
+footer{
+    background-color: #2b2b2b;
+    min-height: 300px;
+}
+
+footer .row{
+    margin: 0px;
+}
+footer .row > div h3{
+    text-align: center;
+    color: #fbfb40;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+footer .row{
+    padding: 40px 0px;
+}
+
+footer .row > div {
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    margin:  0 auto;
+    min-height: 300px;
+    border-right: 1px solid #797933;
+}
+
+footer .row > div a{
+    color: #fff;
+    text-decoration: none;    
+}
+footer .row > div ul{
+    text-align: left;
+    color: #fff;
+    list-style: none;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    padding-left: 90px;
+}
+
+footer .row > div ul li{
+    line-height: 1.6em;
+    font-size: 16px;
+}
+
+.footer-contact{
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;    
+}
+
+.footer-contact h4{
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #fff;
+}
+.footer-contact p.borde{
+    margin: 10px auto;
+    width: 70%;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+}
+.footer-contact p.number{
+    font-size: 19px;
+}
+.footer-contact p.email{
+    font-size: 13px;
+}
+
+.footer-form-contact{
+    padding: 0px 40px !important;
+}
+
+.footer-form-contact form .form-group{
+    margin-bottom: 5px !important;
+}
+
+.footer-form-contact form .form-group .form-control{
+    border-radius: 0px;
+    border:none;
+    box-shadow: none;
+}
+
+.footer-form-contact form button{
+    text-align: left;
+}
+.btn-send{
+    background-color: #2b2b2b;
+    border-width: 1px;
+    padding: 5px 17px;
+    margin: 10px 0px;
+    float: right; 
+}
+
+/* ==========================================================================
+   COPY
+========================================================================= */
+.copy{
+    text-align: center;
+    background-color: #000;
+    min-height: 35px;
+    line-height: 35px;
+    margin: 0px;
+}
+
+.copy p{
+    color: #fff;
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+/* ==========================================================================
+   ESTYLES ABOUT US
+========================================================================= */
+.baner_interna .item img{
+    width: 100%;
+    height: auto;
+}
+
+article.about{
+    text-align: center;
+    padding: 40px;
+    color: #040404;
+}
+article.about h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+article.about p{
+    padding: 0px 40px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+article.about img{
+    margin-top: 40px;
+    width: 95%;
+}
+
+.banner{
+    text-align: center;
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;    
+    min-height: 168px;
+}
+
+.banner h3{
+    line-height: 168px;
+    color: #ffff41;
+    font-size: 28px;
+    font-family: 'Lato', sans-serif;    
+    font-weight: bold;    
+}
+.banner-secundary{
+    text-align: center;
+}
+.banner-secundary h3{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    color: #020202;
+    padding: 30px 0px;
+}
+
+
+
+/* ==========================================================================
+   ESTYLES SERVICES
+========================================================================= */
+
+article.article-services{
+    text-align: center;
+    padding: 40px;
+    color: #040404;
+}
+article.article-services h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+article.article-services p{
+    padding: 0px 40px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.list-services ul{
+    color: #040404;
+    text-align: left;
+    list-style-type: none;
+    font-family: 'Arimo', sans-serif;
+}
+
+.list-services ul li{
+    line-height: 1.8em;
+}
+.list-services ul li i{
+    padding-right: 10px;
+}
+
+.banner-secundary p{
+    font-family: 'Arimo', sans-serif;
+    color: #020202;
+    padding: 30px 70px 0px;
+    font-size: 15px;
+}
+
+
+/* ==========================================================================
+   ESTYLES CONTAC US
+========================================================================= */
+
+article.article-contact{
+    text-align: center;
+    padding: 40px;
+    color: #040404;
+}
+article.article-contact h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+article.article-contact p{
+    padding: 0px 40px;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.article-contact form{
+    width: 80%;
+    margin: 0 auto;
+}
+.article-contact form button{
+    padding: 7px 35px;
+    border: 2px solid #ffff41;
+    margin-right: 10px;
+}
 
 
 
