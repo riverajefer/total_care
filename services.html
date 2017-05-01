@@ -26,6 +26,22 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+    <div class="log-mobile">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Logo" class="img-responsive" width="150px">
+      </a>
+    </div>
+
     <header>
       <div class="container">
         <div class="row">
@@ -50,7 +66,7 @@
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button onclick="openNav()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -81,10 +97,12 @@
   <div class="baner_interna">
     <div class="item">
         <img src="img/slide_services.jpg" alt="First Image">
-        <div class="carousel-caption">
+        <!--
+        <div class="carousel-caption-banner">
             <h3>Services</h3>
             <p></p>
         </div>
+        -->
     </div>
  </div>
 <!-- /Carusel -->
@@ -335,7 +353,16 @@
                 <div>
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
                 <h2>Location</h2>
-                <img src="img/map.png" alt="Map">
+                <!-- MAPA -->
+                <div class="overlay-map" onclick="style.pointerEvents='none'"></div>
+                <iframe
+                    width="100%"
+                    height="200"
+                    frameborder="0" style="border:0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCrzdOBlPuoXf2QYOLYjscjMEzi6XE05LY
+                    &q=41.035596, -73.756744" allowfullscreen>
+                </iframe>
+                <!-- MAPA --> 
                 </div>
 
             </div>

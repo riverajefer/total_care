@@ -1,5 +1,18 @@
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+
+
 $( document ).ready(function() {
-    $('.carousel').carousel();
+
+    $('.carousel').carousel({
+        interval: 600000,
+        pause: "false"
+    });
 
     var $item = $('.carousel .item'); 
     var $wHeight = $(window).height();
@@ -23,11 +36,6 @@ $( document ).ready(function() {
     });
 
 
-    $('.carousel').carousel({
-    interval: 600000,
-    pause: "false"
-    });
-
   $("#testimonial-slider").owlCarousel({
         items:1,
         itemsDesktop:[1000,1],
@@ -41,6 +49,7 @@ $( document ).ready(function() {
         transitionStyle:"fade",
         autoPlay:true
     });
+
 
 });
 
