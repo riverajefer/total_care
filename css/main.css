@@ -161,14 +161,14 @@ header .container .row .box-hablamos{
 header .container .row .dir{
     text-align: center;
     color: #16263f;
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
 }
 header .container .row .tel{
     text-align: center;
     color: #000;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
@@ -246,7 +246,7 @@ header .container .row .tel{
     text-align: left;
     right: 20%;
     left: 20%;
-    top: 36%;
+    top: 56%;
     padding-bottom: 30px;
 }
 
@@ -381,6 +381,7 @@ header .container .row .tel{
 }
 .bn-contact > div > p.number{
     font-size: 28px;
+    color:#fff;
 }
 .bn-contact > div > p.email{
     font-size: 17px;
@@ -675,6 +676,52 @@ footer .row > div ul li{
     margin: 0px;
 }
 
+.baner_service{
+  background: url(../img/slide_services.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  height: 363px; 
+}
+
+.baner_contact{
+  background: url(../img/slide_contac.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  height: 363px; 
+}
+
+.baner_about{
+  background: url(../img/slide_about.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  height: 363px; 
+}
+
+.caption-interna{
+    text-align: left;
+    top: 56%;
+    margin-left: 18%;
+    position: relative;
+}
+
+.baner_interna .caption-interna h2{
+    margin: 0px; 
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;  
+}
+.baner_interna .caption-interna p{
+    width: 15%;
+    min-height: 20px;
+    border-bottom: 7px solid #ffff41;
+}
 
 /* ==========================================================================
    ESTYLES ABOUT US
@@ -848,6 +895,7 @@ article.article-contact p{
     } 
     .bn-contact > div > p.number {
         font-size: inherit;
+        color:#fff;
     }    
 
     .testimonial .testimonial-title{
@@ -898,6 +946,9 @@ article.article-contact p{
 
 @media screen and (min-width: 641px) and (max-width: 880px){
    
+    .baner_interna{
+        height: 230px;
+    }
     .banner h3 {
         line-height: 109px;
         color: #ffff41;
@@ -976,6 +1027,7 @@ article.article-contact p{
     }
     .bn-contact > div > p.number {
         font-size: inherit;
+        color:#fff;
     }    
     .services{
         background-size: 123% 100%;
@@ -1068,6 +1120,10 @@ article.article-contact p{
 
 
 @media screen and (min-width: 414px) and (max-width: 640px) { 
+    .baner_interna{
+       height: 230px;
+     }
+
     .banner h3 {
         line-height: 109px;
         color: #ffff41;
@@ -1118,6 +1174,7 @@ article.article-contact p{
     }  
     .bn-contact > div > p.number {
         font-size: 24px;
+        color:#fff;
     }
     .bn-contact > div h3{
         font-size: 23px;
@@ -1157,11 +1214,18 @@ article.article-contact p{
     }   
     .list-services ul li {
         line-height: 2.1em;
-    }                  
+    }   
+    .testimonial .description{
+        width: 100%;
+    }
+                   
  }
 
 
 @media screen and (min-width: 321px) and (max-width: 639px) { 
+    .baner_interna{
+       height: 230px;
+     }
 
     .banner h3 {
         line-height: 109px;
@@ -1220,7 +1284,7 @@ article.article-contact p{
         margin-left: 20px;
     }
     .bn-hours ul li {
-        font-size: 13px;
+        font-size: 15px;
     }
     .bn-location div > img{
         width: 73%;
@@ -1228,6 +1292,7 @@ article.article-contact p{
     }  
     .bn-contact > div > p.number {
         font-size: 22px;
+        color:#fff;
     }
     .bn-contact > div h3{
         font-size: 19px;
@@ -1288,16 +1353,34 @@ article.article-contact p{
         padding: 5px 20px;
     } 
     .list-services{
-        margin-left: -55px;
+        margin-left: -38px;
     }  
     .list-services ul li {
         line-height: 2.1em;
-    }               
+    }   
+    article.article-services{
+        padding: 0px;
+    }
+    article.article-services p{
+        padding: 0px 15px;
+    }   
+    .testimonial .description{
+        width: 100%;
+    }
+    header .container .row .tel{
+        font-size: 19px;
+    }
+                 
 }
-@media (max-width: 320px) {
+
+@media screen and (min-width: 140px) and (max-width: 320px) { 
+
+    .baner_interna{
+       height: 150px;
+     }
 
     .banner h3 {
-        line-height: 109px;
+        line-height: 34px;
         color: #ffff41;
         font-size: 16px;
         font-family: 'Lato', sans-serif;
@@ -1357,13 +1440,14 @@ article.article-contact p{
         margin-left: 20px;
     }
     .bn-hours ul li {
-        font-size: 12px;
+        font-size: 14px;
     }
     .bn-location div > img{
         width: 73%;
     }  
     .bn-contact > div > p.number {
         font-size: 24px;
+        color:#fff;
     }
     .bn-contact > div h3{
         font-size: 23px;
@@ -1371,11 +1455,17 @@ article.article-contact p{
     .services .container .row .col-md-6 ul li{
         font-size: 12px;
     }
+    .bn-hours ul{
+        margin-left: -12px;
+    }
     .testimonial-container{
         background-size: 100% 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;        
+    }
+    .testimonial .description{
+        width: 100%;
     }
     footer .row > div{
         padding: 0px;
@@ -1435,7 +1525,7 @@ article.article-contact p{
         padding: 5px 20px;
     } 
     .list-services{
-        margin-left: -55px;
+        margin-left: -30px;
     }
     .list-services ul li {
         line-height: 2.1em;
@@ -1443,6 +1533,13 @@ article.article-contact p{
     .carousel-caption h3{
         font-size: 21px;
     }    
+    article.article-services{
+        padding: 0px;
+    }
+    article.article-services p{
+        padding: 0px 15px;
+    }
+
 }
 
 
